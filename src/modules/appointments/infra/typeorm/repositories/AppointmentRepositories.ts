@@ -4,7 +4,6 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
-import appointmentsRouter from '../../http/routes/appointments.routes';
 
 class AppointmentsRepository implements IAppointmentsRepository {
   private ormRepository: Repository<Appointment>;
