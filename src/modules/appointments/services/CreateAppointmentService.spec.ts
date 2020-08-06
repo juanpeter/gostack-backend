@@ -14,7 +14,7 @@ describe('CreateAppointment', () => {
     });
 
     expect(appointment).toHaveProperty('id');
-    expect(appointment.provider_id).toHaveProperty('123123');
+    expect(appointment.provider_id).toBe('123123');
   });
 
   // it('should not be able to create 2 appointments on the same time', () => {});
